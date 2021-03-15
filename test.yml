@@ -1,4 +1,4 @@
-name: 'Test hello git'
+name: Test hello git
 
 on: [push]
 
@@ -8,9 +8,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/@v2
-      - name: go
+      - uses: actions/checkout@v2
+      - name: print
         run: echo "you did it"
-
-      - name: main
-        run: python ../../main.py
+      # - name: main
+      #   run: python ../main.py
