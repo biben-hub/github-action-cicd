@@ -1,10 +1,6 @@
 name: 'Test hello git'
-description: 'you recorded'
 
-on:
-
-  push:
-    - main
+on: [push]
 
 jobs:
   build:
@@ -12,6 +8,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/@v2
       - name: go
         run: echo "you did it"
 
