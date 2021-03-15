@@ -1,8 +1,11 @@
+#creation of the pipeline
+
 name: Test hello git
+
 on: [push]
 
 jobs:
-  build:
+  MyBuild:
 
     runs-on: ubuntu-latest
 
@@ -10,5 +13,5 @@ jobs:
       - uses: actions/checkout@v2
       - name: print
         run: echo "you did it"
-      # - name: main
-      #   run: python ../main.py
+    # - name: main
+    #   run: python ../main.py
