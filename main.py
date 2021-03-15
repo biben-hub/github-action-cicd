@@ -1,7 +1,7 @@
 from reverse import reverse
 
 def main():
-    # print("hello world")
+    print("hello world")
 
     print(reverse())
 
