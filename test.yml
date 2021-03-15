@@ -1,0 +1,19 @@
+name: 'Test hello git'
+description: 'you recorded'
+
+on:
+
+  push:
+    - main
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: go
+        run: echo "you did it"
+
+      - name: main
+        run: python ../../main.py
